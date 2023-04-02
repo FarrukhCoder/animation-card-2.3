@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lato';
+    color: #fff;
+}
+.main-hero{
+    width: 100%;
+    height: 100vh;
+    background-color: #2d333c ;
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    padding: 20px;
+    width: 350px;
+    height: 500px;
+    background-image: url('/images/mountain.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.content-desc{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.content-tittle{
+    font-size: 28px;
+    margin: 30px 0;
+    color: #99BFDB;
+}
+.line{
+    width: 60px;
+    border-bottom: 3px solid #C8B453;
+}
+.content-text{
+    margin-top: 20px;
+    margin-bottom: 80px;
+    width: 220px;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 700
+}
+.spoiler-text{
+    padding: 10px 20px;
+    font-size: 18px;
+    font-family: serif;
+    font-weight: 700;
+    transform: translateY(100%);
+    transition: .5s all;
+}
+.content:hover .spoiler-text{
+    transform: translateY(0);
+}
+.info{
+    margin-top: 55px;
+    display: flex;
+    align-items: center;
+}
+.info p{
+    font-size: 17px;
+}
+.commit{
+    margin-right: 15px;
+}
+.bx{
+    color: #A39755;
+}
+a{
+    border: 2px solid transparent;
+    padding: 6px 25px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    transition: .4s all
+}
+a:hover{
+    color: #000;
+    background-color: #fff;
+}
